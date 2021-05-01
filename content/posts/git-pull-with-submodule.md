@@ -1,7 +1,7 @@
 ---
 title: "Git Pull With Submodule"
 date: 2021-05-01T11:09:48+08:00
-draft: true
+draft: false
 ---
 
 #tips
