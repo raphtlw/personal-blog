@@ -82,4 +82,4 @@ Clearly I find on the balance, doing things this way is worthwile. It meshes nic
 
 Thanks for reading this post! If there are any tips or hacks you have for making this system better, feel free to drop a comment below or hit me up at <https://raphtlw.rocks/contact>.
 
-> Header Image Credit: https://line.17qq.com/articles/hobojddhz.html
+> Header image credit: https://line.17qq.com/articles/hobojddhz.html

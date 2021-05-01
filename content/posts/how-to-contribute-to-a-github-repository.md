@@ -8,8 +8,6 @@ A simple guide to contributing on Github
 
 ![](https://cdn-images-1.medium.com/max/800/0*wAfE99LmmAafMhTN)
 
-Photo by [Yancy Min](https://unsplash.com/@yancymin) on [Unsplash](https://unsplash.com)
-
 > When you play the game of clones, you merge or you reset --hard.
 
 Git it?
@@ -41,3 +39,5 @@ Now, submit the pull request.
 Congrats! You have successfully contributed to a Github repository. Now you’ll just have to wait for the repository owner/admins to accept your pull request.
 
 Thanks for reading this guide!
+
+> Header image by [Yancy Min](https://unsplash.com/@yancymin) on [Unsplash](https://unsplash.com)
