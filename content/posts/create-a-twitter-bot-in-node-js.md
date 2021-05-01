@@ -14,19 +14,19 @@ How about a simple twitter bot which retweets/searches/replies on tweets? I rece
 
 To get started, make sure you have Node.js installed (of course). To install it on Linux:
 
-```
+```shell
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 ```
 
 Then
 
-```
+```shell
 nvm install node
 ```
 
 In a new project
 
-```
+```shell
 npm init
 ```
 
@@ -34,7 +34,7 @@ For all the prompts, just hit enter (defaults).
 
 To install twit:
 
-```
+```shell
 npm install twit
 ```
 
@@ -53,7 +53,7 @@ Fill out the necessary fields in the form and click on the button “Create Your
 
 Create a new config.js file and add the credentials as follows:
 
-```
+```javascript
 // config.js  
 /** TWITTER APP CONFIGURATION  
  * consumer_key  
@@ -76,7 +76,7 @@ module.exports = {
 
 In the same folder, create an `index.js` file. We will need to instantiate a new Twit and Twitter object with the configuration file as needed.
 
-```
+```javascript
 var Twit = require('twit');  
 var Twitter = new Twit(require('./config.js');
 ```
@@ -85,7 +85,7 @@ var Twitter = new Twit(require('./config.js');
 
 Let’s create a function which retweets things. In order to do so, we can use the Twitter object to retweet the tweet passed in as a parameter to the function. The Twitter object (according to the documentation) retweets tweets passed in to the post function as an ID string. Which means that a tweet’s ID has to be given as a parameter to the post function.
 
-```
+```javascript
 /**  
  * Retweets a tweet passed into the function.  
  * @param {*} tweet  
@@ -104,7 +104,7 @@ With this, you can do something after the function we passed in to the post func
 
 Else, we can just log to the console if twitter sends us an error while retweeting the tweet.
 
-```
+```javascript
 /**  
  * Retweets a tweet passed into the function.  
  * @param {*} tweet  
@@ -127,7 +127,7 @@ function retweet(tweet) {
 
 We can also have a function that searches something and calls another function passed into the searching function as a parameter with the result after searching.
 
-```
+```javascript
 /**  
  * The searching function.  
  * @callback callback function which is called after the tweet is returned.  
@@ -164,7 +164,7 @@ function search(callback) {
 
 If you want to search for something and retweet a random result from your query, we can pass the retweet function into the search function, and set a interval in which the functions will be executed.
 
-```
+```javascript
 function main() {  
   search(retweet);  
 }
@@ -174,7 +174,7 @@ We are calling the function but not actually running it. This means that we are 
 
 Now, we can call the main function after a set interval.
 
-```
+```javascript
 main();  // Run the main function once first before running the interval ticks. This is optional.
 
 setInterval(main, Math.floor(((Math.random() * 10) + 5) * 1000) * 60);

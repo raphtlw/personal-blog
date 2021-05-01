@@ -12,7 +12,7 @@ Photo by [Christian Wiediger](https://unsplash.com/@christianw) on [Unsplash](h
 
 We’ll start with an empty flutter application with a Stateful widget so we can update it when we tap on a menu item.
 
-```
+```dart
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -32,7 +32,7 @@ class _MyAppState extends State<MyApp> {
 
 We should also create the classes which represent the screen to switch to when an element of the navigation drawer is tapped.
 
-```
+```dart
 **// Place this below the _MyAppState class**
 
 class Item1 extends StatelessWidget {  
@@ -58,7 +58,7 @@ Now, we can proceed with creating the navigation drawer.
 
 Inside `_MyAppState`, create a `MaterialApp` which contains the `AppBar` with the `Drawer`. This creates the foundation for the navigation drawer.
 
-```
+```dart
 **// class _MyAppState**
 
 return MaterialApp(  
@@ -81,7 +81,7 @@ return MaterialApp(
 
 We can now put items into the navigation drawer.
 
-```
+```dart
 **// class _MyAppState**
 
 drawer: Drawer(  
@@ -109,7 +109,7 @@ We need to remove the padding so that items do not get squished inside the `Draw
 
 Looking back at the top class, before we call the build function, we should create a `Widget` variable so that we can dynamically update the main screen when we tap something in the navigation drawer.
 
-```
+```dart
 **// Your _MyAppState should now look something like this**
 
 class _MyAppState extends State<MyApp> {  
@@ -156,7 +156,7 @@ We can use the `setState` function built into Stateful widgets in flutter!
 
 This is how your `Drawer`'s `ListView` should now look like:
 
-```
+```dart
 ListTile(  
   title: Text('Item 1'),  
   onTap: () {  
@@ -183,7 +183,7 @@ When you tap the item though, the navigation drawer does not close. How can we f
 
 We can do that by using the `Navigator` in flutter to navigate back by 1 screen
 
-```
+```dart
 **// Inside onTap**
 
 onTap: () {  
@@ -197,7 +197,7 @@ onTap: () {
 
 In order for the navigation drawer to work, we still need to do 1 thing; Add a body to the `Scaffold`.
 
-```
+```dart
 **// After that, your _MyAppState class should now look something like this**
 
 class _MyAppState extends State<MyApp> {  

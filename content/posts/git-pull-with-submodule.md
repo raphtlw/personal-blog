@@ -8,7 +8,7 @@ draft: false
 
 For a repo with submodules, we can pull all submodules with
 
-```
+```shell
 git submodule update --init --recursive
 ```
 
@@ -18,7 +18,7 @@ To update submodules, we can use
 
 > For git **1.8.2** or above, the option --remote was added to support updating to latest tips of remote branches
 
-```
+```shell
 git submodule update --recursive --remote
 ```
 
@@ -26,13 +26,13 @@ This has the added benefit of respecting any "non default" branches specified in
 
 For git **1.7.3** or above you can use
 
-```
+```shell
 git submodule update --recursive
 ```
 
 or simply
 
-```
+```shell
 git pull --recurse-submodules
 ```
 
@@ -40,13 +40,13 @@ git pull --recurse-submodules
 
 For a repo with no pulled submodules yet, do
 
-```
+```shell
 git submodule update --init --recursive
 ```
 
 To update submodules, do
 
-```
+```shell
 git submodule update --recursive --remote
 ```
 

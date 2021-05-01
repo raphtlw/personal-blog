@@ -10,7 +10,7 @@ A simple guide to contributing on Github
 
 Photo by [Yancy Min](https://unsplash.com/@yancymin) on [Unsplash](https://unsplash.com)
 
-> “Light travels faster than sound. That’s why some people appear bright until you hear them speak”
+> When you play the game of clones, you merge or you reset --hard.
 
 Git it?
 
