@@ -8,7 +8,7 @@ By the end of this tutorial, you will know how to use setState to dynamically up
 
 ![](https://cdn-images-1.medium.com/max/800/0*XDbyp6V_jwElj9of)
 
-###### Photo by [Christian Wiediger](https://unsplash.com/@christianw) on [Unsplash](https://unsplash.com)
+Photo by [Christian Wiediger](https://unsplash.com/@christianw) on [Unsplash](https://unsplash.com)
 
 We’ll start with an empty flutter application with a Stateful widget so we can update it when we tap on a menu item.
 

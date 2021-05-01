@@ -8,7 +8,7 @@ A simple guide to contributing on Github
 
 ![](https://cdn-images-1.medium.com/max/800/0*wAfE99LmmAafMhTN)
 
-###### Photo by [Yancy Min](https://unsplash.com/@yancymin) on [Unsplash](https://unsplash.com)
+Photo by [Yancy Min](https://unsplash.com/@yancymin) on [Unsplash](https://unsplash.com)
 
 > “Light travels faster than sound. That’s why some people appear bright until you hear them speak”
 

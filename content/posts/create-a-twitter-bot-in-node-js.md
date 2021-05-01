@@ -6,7 +6,7 @@ draft: false
 
 ![](https://cdn-images-1.medium.com/max/800/0*eIdt1EeVcD7Pp2S7)
 
-###### Photo by [freestocks.org](https://unsplash.com/@freestocks) on [Unsplash](https://unsplash.com)
+Photo by [freestocks.org](https://unsplash.com/@freestocks) on [Unsplash](https://unsplash.com)
 
 How about a simple twitter bot which retweets/searches/replies on tweets? I recently made one&mdash;[check it out](https://twitter.com/checkra1nbot). Building twitter bots may sound like a huge thing, but it really is pretty easy once you understand the basics of JavaScript and Node.js. Today, we will be building a twitter bot using the “twit” package from [npm](http://npmjs.org). Please note&mdash;you will need to refer to the [twit documentation](https://www.npmjs.com/package/twit) for a deeper reference.
 
