@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://blog.raphtlw.rocks/"
 languageCode = "en-us"
 theme = "hello-friend"
 paginate = 5
