@@ -1,6 +1,6 @@
 ---
 title: "How to Survive a Laptop Fire"
-date: 2021-05-01T18:54:31+08:00
+date: 2021-05-02T00:25:51+08:00
 draft: false
 ---
 
