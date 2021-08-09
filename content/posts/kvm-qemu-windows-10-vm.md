@@ -2,6 +2,7 @@
 title: "Kvm Qemu Windows 10 Vm"
 date: 2021-08-09T12:39:38+08:00
 draft: false
+title-case-style: Chicago
 ---
 
 Over the weekend, I wiped Windows on my Zephyrus G14 and installed Pop!\_OS on it. I've been trying to get a Windows 10 Virtual Machine as I need it for school. It's also great to have a setup like this because I can destroy and create the VM anytime I want because Windows likes to be funny and break itself over time. With this, I can also have Windows 11, a macOS VM and more. It just gives me the freedom to have whatever operating system I want.
