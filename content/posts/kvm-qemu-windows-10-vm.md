@@ -99,4 +99,3 @@ In Windows, open up the virtio E: drive in the file explorer and double click on
 ![Win10_virtio_guest_tool_installer](/images/Win10_virtio_guest_tool_installer.png)
 
 Congrats, you now have a fully functional KVM-based virtual machine. You can further explore this if you would like better graphics performance or CPU performance through a PCI passthrough.
-

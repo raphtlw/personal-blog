@@ -1,7 +1,7 @@
 ---
 title: "Why I Dont Trust Wikipedia"
 date: 2021-05-09T20:18:11+08:00
-draft: false
+draft: true
 ---
 
 ![](https://larrysanger.org/wp-content/uploads/2020/05/deflated.png)

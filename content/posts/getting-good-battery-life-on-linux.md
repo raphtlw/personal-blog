@@ -8,3 +8,9 @@ Over the past year of using Linux daily, i've discovered many ways to improving 
 
 <!-- change -->
 <!-- TODO: add average battery life stats and stuff -->
+
+The fastest and easiest way to improve battery life on Linux is to use [TLP](https://linrunner.de/tlp/). It's a program that's designed to improve your laptop battery efficiency by tuning down power-hungry services and drivers like WiFi, Bluetooth and others. To install it, simply fire up a terminal and do `yay -S tlp`. Since I'm on Arch, I'll have to start/enable the service as well, so I'll do `sudo systemctl enable --now tlp`. It's that easy.
+
+Now, to get the most out of `tlp`, type `sudo tlp-stat -w` and check the output. If it says "No warnings detected", you're good to go. Else, follow what it says in the output. In my case, I had to install `ethtool` to get WoL (Wake on Lan) working. All I had to do was to use `yay -S ethtool` to get Wake on Lan support to work again as normal.
+
+To further improve battery life, you want to install `powertop` to see what processes are using the most amount of battery. Usually, for the rogue processes
