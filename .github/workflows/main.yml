@@ -25,6 +25,9 @@ jobs:
     name: Cross-post to Medium
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
       - id: files
         uses: jitterbit/get-changed-files@v1
       - id: posts
