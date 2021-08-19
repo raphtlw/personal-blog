@@ -42,7 +42,7 @@ jobs:
           done
       - if: steps.posts.outputs.post0
         name: Publish to Medium
-        uses: InfraWay/post-medium-action@v1.1.1
+        uses: infraway/post-medium-action@v1.3.0
         with:
           app_id: ${{ secrets.MEDIUM_APP_ID }}
           app_secret: ${{ secrets.MEDIUM_APP_SECRET }}
