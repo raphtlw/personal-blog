@@ -67,12 +67,12 @@ Use this command to list all the disk and partitions on your system:
 fdisk -l
 ```
 
-**Your hard disk should be labelled /dev/sda or /dev/nvme0n1. Please use the appropriate disk labeling for your system. I am using /dev/sda because that’s more common.**
+**Your hard disk should be labelled /dev/sda or /dev/nvme0n1. Please use the appropriate disk labeling for your system. I am using /dev/nvme0n1 because it is how it is named on the Zephyrus G14.**
 
 First, select the disk you are going to format and partition:
 
 ```
-fdisk /dev/sda
+fdisk /dev/nvme0n1
 ```
 
 I suggest that you delete any existing partitions on the disk using command **d**. Once you have the entire disk space free, it’s time to create new partitions with command **n**.
@@ -123,11 +123,11 @@ When you are done with the disk partitioning, enter **w** command to write the c
 
 ### Step 4: Create filesystem
 
-Now that you have your disk partitions ready, it’s time to create filesystem on it. Follow the steps for your system
+Now that you have your disk partitions ready, it’s time to create filesystem on it. Follow the steps for the G14.
 
-#### Creating filesystem for UEFI system
+#### Creating filesystem for UEFI systems
 
-So, you have two disk partitions and the first one is EFI type. Create a [FAT32 file system](https://en.wikipedia.org/wiki/File_Allocation_Table) on it using the [mkfs command](https://linuxhandbook.com/mkfs-command/):
+So, you have two disk partitions and the first one is EFI type. Create a FAT32 file system on it using the [mkfs command](https://linuxhandbook.com/mkfs-command/):
 
 ```
 mkfs.fat -F32 /dev/nvme0n1p1
@@ -139,12 +139,12 @@ Now create an Ext4 filesystem on the root partition:
 mkfs.ext4 /dev/nvme0n1p2
 ```
 
-#### Creating filesystem for non-UEFI system
+#### Creating filesystem for non-UEFI systems
 
 For non-UEFI system, you only have one single root partition. So just make it ext4:
 
 ```
-mkfs.ext4 /dev/sda1
+mkfs.ext4 /dev/nvme0n1p1
 ```
 
 ### Step 5: Connect to WiFi
